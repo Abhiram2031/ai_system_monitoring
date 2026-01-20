@@ -1,0 +1,15 @@
+2026-01-05 12:30:00 INFO Application started
+2026-01-05 12:30:05 WARN High memory usage memory=85%
+2026-01-05 12:30:10 ERROR Database connection failed
+2026-01-05 12:30:15 INFO Request processed endpoint=/api/users latency=120ms
+2026-01-05 12:45:00 INFO New user registered user_id=456
+2026-01-05 12:45:05 WARN Disk usage high disk=91%
+2026-01-05 12:45:10 ERROR Payment service crashed
+2026-01-05 14:30:00 INFO User password updated user_id=321
+2026-01-05 14:30:05 WARN CPU overload cpu=93%
+2026-01-05 14:30:10 ERROR Checkout service unavailable
+2026-01-08 10:31:00 ERROR Payment failed
+2026-01-08 10:31:01 ERROR Payment failed
+2026-01-08 10:31:02 ERROR Payment failed
+2026-01-08 10:31:03 ERROR Payment failed
+

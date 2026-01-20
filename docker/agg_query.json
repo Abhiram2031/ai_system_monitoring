@@ -1,0 +1,32 @@
+{
+  "size": 0,
+  "aggs": {
+    "logs_per_minute": {
+      "date_histogram": {
+        "field": "@timestamp",
+        "fixed_interval": "1m"
+      },
+      "aggs": {
+        "error_count": {
+          "filter": {
+            "term": {
+              "log.level": "ERROR"
+            }
+          }
+        },
+        "warn_count": {
+          "filter": {
+            "term": {
+              "log.level": "WARN"
+            }
+          }
+        },
+        "total_logs": {
+          "value_count": {
+            "field": "log.level"
+          }
+        }
+      }
+    }
+  }
+}
